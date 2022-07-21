@@ -1,0 +1,324 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing border-box;
+}
+body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
+
+.correct input{
+	margin-bottom: 12px;
+}
+
+/*header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color:rgba(0,0,0, 0.99); 
+}*/
+
+.heading{
+	text-decoration: none;
+	font-size: 27px;
+	font-weight: 900;
+	color: rgba(100,20,0, 0.6);
+}
+
+.mynav{
+	font-weight: 700;
+	font-family: sans-serif;
+	color: rgba(0,50,100, 0.79);
+}
+
+@media(max-width: 600px){
+	.mynav a{
+		width: 80px !important;
+		font-weight: 900;
+		text-align: center !important;
+	}
+}
+
+.hwo{
+	padding: 10px !important;
+	width: inherit !important;
+	color: green;
+}
+
+.mynav a{
+	width: 110px;
+	transition: width 0.5s;
+}
+
+.mynav a:hover{
+	width: 103px;
+	color: tomato !important;
+	border-radius: 20px;
+	background-color: slateblue !important;
+}
+
+.active{
+	border-bottom: 1px grey solid !important;
+}
+
+/* showcase begins */
+.showcase{
+	height: 400px;
+	position: relative;
+	background-image: url(iphone13.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.showcase2{
+	height: 400px;
+	position: relative;
+	background-image: url(iphonex.webp);
+}
+
+.showcase::after{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.65);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+
+.showcase2::after{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.55);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.contentchild{
+	position: relative;
+	z-index: 2;
+	padding: 40px;
+	text-align: center;
+	font-family: monospace;
+}
+
+.contentchild h1{
+	font-weight: 900;
+	color: white;
+	letter-spacing: 1.9px;
+}
+.contentchild h4{
+	font-weight: 700;
+	color: grey;
+	font-size: 30px;
+	padding: 5px;
+}
+.contentchild h5{
+	color: antiquewhite;
+	padding: 5px;
+	font-weight: 500;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+
+.contentchild p{
+	color: silver;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+}
+
+/*  WELCOME SLIDE  */
+
+.welcomeslide{
+	padding: 40px;
+}
+
+.welcomeslide h1{
+	font-weight: 900;
+	color: gold;
+	letter-spacing: 1.9px;
+	font-family: monospace;
+}
+
+.welcomeslide h2{
+	color: silver;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+}
+
+.welcomeslide h3{
+	color: silver;
+	font-weight: 580;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: monospace;
+}
+
+.welcomeslide p{
+	color: skyblue;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 1.3px;
+	font-family: sans-serif;
+}
+
+.welcomeslide img{
+	width: 145px;
+	transition: width 0.6s;
+}
+
+.welcomeslide img:hover{
+	width: 150px;
+}
+
+/*  SERVICES SLIDE  */
+
+.servicesslide p{
+	color: dodgerblue;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 1.3px;
+	font-family: sans-serif;
+}
+.servicesslide h2{
+	opacity: 0.6;
+	font-weight: 700;
+	font-size: 24px;
+	color: slateblue;
+	font-family: sans-serif;
+}
+
+.servicesslide h5{
+	margin-top: -6px;
+	opacity: 0.6;
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 1.1px;
+	color: brown;
+	font-family: monospace;
+}
+
+.servicesslide h3{
+	opacity: 0.9;
+	font-weight: 700;
+	font-size: 25px;
+	color: brown;
+	font-family: sans-serif;
+}
+
+.servicesslide hr{
+	width: 50%;
+	margin-left: 75px;
+	margin-top: -1px;
+}
+.servicesslide img{
+	width: 85%;
+	border-radius: 29px;
+	height: 168px;
+}
+
+/*  locate us section*/
+
+.serviceparent2{
+	background:rgba(160,50,0, 0.6);
+	font-family: sans-serif;
+	padding: 20px 20px;
+	line-height: 18px;
+	letter-spacing: 0.11em;
+	border-bottom: 1.2px gold solid;
+	border-top-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+}
+.serviceparent2 h5{
+	font-size: 16px;
+	opacity: 0.8;
+	padding: 8px;
+	font-family: sans-serif;
+	z-index: 2
+	color: antiquewhite;
+}
+
+.parent2child p{
+	padding: 5px;
+	display: all;
+	opacity: 0.6;
+}
+.bold{
+	font-weight: 700;
+	color: antiquewhite;
+	padding: 8px;
+}
+
+.days{
+	font-size: 12px;
+	color: antiquewhite;
+	opacity: 0.99;
+}
+
+.parent2child{
+	text-align: left;
+	z-index: 2
+}
+
+
+/* EXPERTS SECTION */
+.technicians{
+	padding: 1px 0px 10px 0px;
+	background-color rgba(010,0,0,0.4) !important;
+}
+
+.expertname{
+	display: none;
+}
+
+
+.info{
+	border-radius: 8px;
+
+}
+
+.info:hover .expertname{
+	display: block;
+	height: auto !important;
+}
+
+.technicians h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: gold;
+	opacity: 0.7;
+	font-family: sans-serif;
+	letter-spacing: 1.6px;
+}
+
+
+.technicians h5{
+	font-size: 20px;
+	font-weight: 700;
+	font-family: cursive;
+}
+
+
+.technicians p{
+	padding: 2px 4px;
+	font-family: monospace;
+	color: gold;
+}
+/*=== HOT SALES===*/
+
+#hotSales img{
+	width: 80%;
+	height: 230px;
+}
+
+
+
+
+
