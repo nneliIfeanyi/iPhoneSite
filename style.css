@@ -63,7 +63,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 .showcase{
 	height: 420px;
 	position: relative;
-	background-image: url(iphone13.webp);
+	background-image: url(images/iphones.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
@@ -71,7 +71,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 .showcase2{
 	height: 420px;
 	position: relative;
-	background-image: url(iphonex.webp);
+	background-image: url(images/iphone1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .showcase::after{
@@ -99,7 +101,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 .contentchild{
 	position: relative;
 	z-index: 2;
-	padding: 40px;
+	padding: 7px;
 	text-align: center;
 	font-family: monospace;
 }
