@@ -61,7 +61,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 
 /* showcase begins */
 .showcase{
-	height: 400px;
+	height: 420px;
 	position: relative;
 	background-image: url(iphone13.webp);
 	background-size: 100% 100%;
@@ -69,7 +69,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 }
 
 .showcase2{
-	height: 400px;
+	height: 420px;
 	position: relative;
 	background-image: url(iphonex.webp);
 }
@@ -180,18 +180,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 /*  SERVICES SLIDE  */
 
 .servicesslide p{
-	color: dodgerblue;
 	padding: 10px;
 	font-weight: 400;
 	font-size: 14px;
 	letter-spacing: 1.3px;
-	font-family: sans-serif;
 }
 .servicesslide h2{
 	opacity: 0.6;
 	font-weight: 700;
-	font-size: 24px;
-	color: slateblue;
 	font-family: sans-serif;
 }
 
@@ -201,16 +197,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 	font-weight: 500;
 	font-size: 22px;
 	letter-spacing: 1.1px;
-	color: brown;
-	font-family: monospace;
 }
 
 .servicesslide h3{
 	opacity: 0.9;
 	font-weight: 700;
-	font-size: 25px;
-	color: brown;
-	font-family: sans-serif;
+}
+
+.servicesslide h4{
+	opacity: 0.9;
+	font-weight: 700;
 }
 
 .servicesslide hr{
