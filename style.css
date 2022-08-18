@@ -61,17 +61,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 
 /* showcase begins */
 .showcase{
-	height: 420px;
+	height: 70vh;
 	position: relative;
-	background-image: url(images/iphones.jpg);
+	background-image: url(img/fones7.jpeg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 
 .showcase2{
-	height: 420px;
+	height: 70vh;
 	position: relative;
-	background-image: url(images/iphone1.jpg);
+	background-image: url(img/fones4.jpeg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }

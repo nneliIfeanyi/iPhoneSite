@@ -2,7 +2,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	box-sizing border-box;
+	box-sizing :border-box;
 }
 body{
 	background-color rgba(0,0,0,0.3);
@@ -35,7 +35,7 @@ body{
 }
 
 .active{
-	border-bottom: 1px grey solid !important;
+	border-bottom: 1px orange solid !important;
 }
 
 
@@ -43,7 +43,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 1.5rem;
+	padding: 1rem 0.5rem;
 
 }
 
@@ -100,31 +100,9 @@ body{
 		display: block;
 	}
 
-.search_bar{
-	border:1px solid purple;
-	border-radius:20px;
-	margin-bottom: 2px;
-}
-
-form input:focus{
-outline:none;
-}
-#search_input{
-width:89.89%;
-padding:10px 0;
-}
-#search_button{
-background:purple;
-color:white;
-border:0;
-padding:10px 0;
-border-radius:0px 20px 20px 0px;
-width:10%;
-cursor:pointer;
-}
-#search_button:hover{
-text-decoration:underline;
-font-weight:bold;
+ul{
+	padding: 0;
+	margin: 0;
 }
 
 #id01 img{
@@ -156,7 +134,7 @@ showcase{
 .showcase9{
 	height: 220px;
 	position: relative;
-	background-image: url(images/iphone2.jpg);
+	background-image: url(img/fones8.jpeg);
 	background-size: 100% 100%;
 }
 
