@@ -55,8 +55,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 	background-color: slateblue !important;
 }
 
-.active{
-	border-bottom: 1px grey solid !important;
+.box_shade{
+	box-shadow: 2px 2px 5px orange;
+}
+
+.dflex{
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	grid-gap: 1.5px;
 }
 
 /* showcase begins */
