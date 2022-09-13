@@ -1,20 +1,195 @@
 *{
 	padding: 0;
 	margin: 0;
-	box-sizing border-box;
+	box-sizing: border-box;
 }
-body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
-
-.correct input{
-	margin-bottom: 12px;
+html{
+	scroll-behavior: smooth;
 }
-
-/*header{
-	position: sticky;
+/* style for header showcase and navbar*/
+.showcase header{
+	position: absolute;
 	top: 0;
 	left: 0;
-	background-color:rgba(0,0,0, 0.99); 
-}*/
+	width: 100%;
+	z-index: 1000;
+	padding: 0 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+	.toggle{
+	position:relative;
+	width:60px;
+	height:60px;
+	background: url('menu-icon.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:40px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.toggle.active{
+	position:relative;
+	width:60px;
+	height:60px;
+	background: url('menu-icon.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:40px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.logo{
+	position: relative;
+	text-transform: uppercase;
+}
+
+.logo a{
+	font-size: 20px;
+	margin-left: 12px;
+	text-decoration: none;
+	font-weight: 700;
+}
+.showcase{
+	position:absolute;
+	top:0;
+	right:0;
+	width:100vw;
+	height:90vh;
+	background :url('img/fones7.jpeg');
+	background-attachment: scroll;
+	background-repeat:no-repeat;
+	background-position: 72% 50%;
+	background-size:cover;
+	z-index:500;
+	transition:1.2s;
+}
+
+.overlay{
+	position:absolute;
+	top:0;
+	right:0;
+	width:100vw;
+	height:90vh;
+	background :rgba(0,0,0,0.6);
+	mix-blend-mode: overlay;
+	z-index:500;
+}
+.showcase.active{
+	right:180px;
+}
+
+.text_2{
+	position: absolute;
+	top: 140px;
+	left: 200px;
+	z-index: 1000;
+}
+
+.text_2 h2{
+	text-shadow: 2px 1.5px gold;
+	color:antiquewhite;
+	font-size: 21px;
+	letter-spacing: 1.4px;
+
+}
+
+.text_2 h3{
+	color:antiquewhite;
+	font-size: 24px;
+}
+
+
+@media(max-width: 768px){
+	.text_2{
+	position: absolute;
+	top: 35vh;
+	left: 47vw;
+	z-index: 1000;
+
+	}
+
+}
+
+.menu{
+	position:absolute;
+	top:0;
+	right:0;
+	width:180px;
+	height:90vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color: grey;
+	z-index: 100;
+}
+.menu a{
+	font-size:16px;
+	color:antiquewhite;
+	text-decoration:none;
+}
+
+.menu a:hover{
+	color:gold;
+	letter-spacing:2px;
+}
+
+.menu li{
+		list-style-type: square;
+		line-height:35px;
+		letter-spacing:1.3px;
+}
+/* style for header showcase and navbar ENDS*/
+
+.container {
+  z-index: 2;
+  position: relative;
+}
+
+.bg-primary {
+  	background:#37488a;
+  }
+
+section.couponsection {
+  padding: 50px 0;
+  position: relative;
+}
+
+.coupon {
+  width: 570px;
+  max-width: 100%;
+  margin: 0px auto;
+  margin-top: 50px;
+  padding: 40px;
+  background: rgba(252, 255, 250, 0.14);
+  text-align: center;
+  border: 8px dashed rgba(255, 255, 255, 0.32);
+  color: #fff;
+}
+.coupon h3, .coupon h4, .header-content h1, .header-content h4 {
+  color:#fff;
+}
+.btn-buynow {
+  border:2px solid transparent;
+  color:#fff;
+  font-size:13px;
+  padding:15px 35px;
+  background:#900d0d;
+  margin-top:10px;
+}
+.btn-buynow:hover {
+  opacity:0.8;
+  color:#fff;
+}
+section.couponsection h2 {
+		font-size:70px;
+        color: inherit;
+	}
+
+  /* coupon section  ENDS*/
 
 .heading{
 	text-decoration: none;
@@ -35,12 +210,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 		font-weight: 900;
 		text-align: center !important;
 	}
-}
-
-.hwo{
-	padding: 10px !important;
-	width: inherit !important;
-	color: green;
 }
 
 .mynav a{
@@ -65,42 +234,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 	grid-gap: 1.5px;
 }
 
-
-
-/* showcase begins */
-.showcase{
-	height: 70vh;
-	position: relative;
-	background-image: url(img/fones7.jpeg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
-
 .showcase-swap{
 	height: 70vh;
 	position: relative;
 	background-image: url(img/swap-showcase.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-}
-
-.showcase2{
-	height: 70vh;
-	position: relative;
-	background-image: url(img/fones4.jpeg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
-
-.showcase::after{
-	content:'';
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.65);
-	width: 100%;
-	height: 100%;
-	z-index: 1;
 }
 
 .showcase-swap::after{
@@ -115,69 +254,31 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 }
 
 
-.showcase2::after{
+.showcase-repairs{
+	height: 60vh;
+	position: relative;
+	background-image: url(images/iphones.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.showcase-repairs::after{
 	content:'';
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.55);
+	background: rgba(0,0,0,0.65);
 	width: 100%;
 	height: 100%;
-	z-index: 1;
-}
-.contentchild{
-	position: relative;
-	z-index: 2;
-	padding: 7px;
-	text-align: center;
-	font-family: monospace;
+	z-index: 5;
 }
 
-.contentchild h1{
-	font-weight: 900;
-	color: white;
-	letter-spacing: 1.9px;
-}
-.contentchild h4{
-	font-weight: 700;
-	color: grey;
-	font-size: 30px;
-	padding: 5px;
-}
-.contentchild h5{
-	color: antiquewhite;
-	padding: 5px;
-	font-weight: 500;
-	font-size: 25px;
-	letter-spacing: 1.5px;
-}
 
-.contentchild p{
-	color: silver;
-	padding: 10px;
-	font-weight: 400;
-	font-size: 16px;
-	letter-spacing: 1.5px;
-}
 
 /*  WELCOME SLIDE  */
 
 .welcomeslide{
-	padding: 40px;
-}
-
-.welcomeslide h1{
-	font-weight: 900;
-	color: gold;
-	letter-spacing: 1.9px;
-	font-family: monospace;
-}
-
-.welcomeslide h2{
-	color: silver;
-	font-weight: 700;
-	font-size: 16px;
-	letter-spacing: 1.5px;
+	padding: 20px;
 }
 
 .welcomeslide h3{
@@ -251,91 +352,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family "Montserrat", sans-serif}
 
 /*  locate us section*/
 
-.serviceparent2{
-	background:rgba(160,50,0, 0.6);
-	font-family: sans-serif;
-	padding: 20px 20px;
-	line-height: 18px;
-	letter-spacing: 0.11em;
-	border-bottom: 1.2px gold solid;
-	border-top-left-radius: 10%;
-	border-bottom-right-radius: 10%;
-}
-.serviceparent2 h5{
-	font-size: 16px;
-	opacity: 0.8;
-	padding: 8px;
-	font-family: sans-serif;
-	z-index: 2
-	color: antiquewhite;
-}
-
-.parent2child p{
-	padding: 5px;
-	display: all;
-	opacity: 0.6;
-}
-.bold{
-	font-weight: 700;
-	color: antiquewhite;
-	padding: 8px;
-}
-
-.days{
-	font-size: 12px;
-	color: antiquewhite;
-	opacity: 0.99;
-}
-
-.parent2child{
-	text-align: left;
-	z-index: 2
-}
-
-
 /* EXPERTS SECTION */
-.technicians{
-	padding: 1px 0px 10px 0px;
-	background-color rgba(010,0,0,0.4) !important;
-}
 
-.expertname{
-	display: none;
-}
-
-
-.info{
-	border-radius: 8px;
-
-}
-
-.info:hover .expertname{
-	display: block;
-	height: auto !important;
-}
-
-.technicians h4{
-	font-size: 24px;
-	font-weight: 600;
-	color: gold;
-	opacity: 0.7;
-	font-family: sans-serif;
-	letter-spacing: 1.6px;
-}
-
-
-.technicians h5{
-	font-size: 20px;
-	font-weight: 700;
-	font-family: cursive;
-}
-
-
-.technicians p{
-	padding: 2px 4px;
-	font-family: monospace;
-	color: gold;
-}
 /*=== HOT SALES===*/
 
 #hotSales img{
