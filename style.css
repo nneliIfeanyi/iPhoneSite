@@ -257,7 +257,7 @@ section.couponsection h2 {
 .showcase-repairs{
 	height: 60vh;
 	position: relative;
-	background-image: url(images/iphones.jpg);
+	background-image: url(img/rep.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
@@ -267,7 +267,7 @@ section.couponsection h2 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.65);
+	background: rgba(0,0,0,0.75);
 	width: 100%;
 	height: 100%;
 	z-index: 5;
