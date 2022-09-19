@@ -69,7 +69,7 @@
       <h2 class="w3-medium"><b>Quality iPhone Top Notch Repairs</b></h2>
       <h5 class="w3-large w3-tag">LCD Replacement Price List</h5>
     </div>
-    <div class="w3-blue-grey" style="height: auto; width: 90%;margin: auto;">
+    <div class="w3-blue-grey" style="height: auto; width: 80%;margin: auto;">
       <img class="w3-image w3-hide-medium w3-hide-large" src="img/lcd.jpg" style="width:100%; height: 100px;">
       <img class="w3-image w3-hide-small" src="img/lcd.jpg" style="width:100%; height: 210px;">
 
@@ -139,6 +139,7 @@
         <li class="w3-tag w3-hide w3-animate-zoom" id="Demo20">#222,000.00</li>
         <li class="w3-button w3-block" onclick="myFunction('Demo21')">&diams;&nbsp; iPhone 13</li>
         <li class="w3-tag w3-hide w3-animate-zoom" id="Demo21">#152,000.00</li>
+
       </ul>
       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;&#10094;</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;&#10095;</button>
@@ -152,7 +153,7 @@
       <h5 class="w3-large w3-tag">Battery Replacement Price List</h5>
     </div>
 
-    <div class="w3-display-container w3-animate-left w3-blue-grey" style="height: auto; width: 90%;margin: auto;">
+    <div class="w3-display-container w3-animate-left w3-blue-grey" style="height: auto; width: 80%;margin: auto;">
         <img class="w3-image w3-hide-medium w3-hide-large" src="images/ios-battery.jpg" style="width:100%; height: 100px;">
         <img class="w3-image w3-hide-small" src="images/ios-battery.jpg" style="width:100%; height: 210px;">
       
@@ -248,7 +249,7 @@
         <li class="w3-button w3-block">&diams;&nbsp; Speakers & earpiece ..etc</li>
         <li class="w3-button w3-padding-16 w3-dark-grey w3-large w3-block" onclick="myFunction('Demo-22')">Make Inquiry</li>
 
-        <li id="Demo-22" class=" w3-hide w3-animate-top">
+        <li id="Demo-22" class=" w3-hide w3-animate-top w3-khaki ">
           <form name=Trading method="POST" data-netlify="true">
             <p class="w3-tiny">Kindly enter the following details and submit.</p>
               <p><input class="w3-input w3-padding-16" type="text" placeholder="--iPhone Model--" required name="Model"></p>
@@ -266,7 +267,29 @@
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;&#10095;</button>
   </div>
-
+  <div class="w3-margin-bottom">
+    <button onclick="myFunction('Demo25')" class="w3-button w3-round w3-teal w3-padding">Book a Service Now</button>
+  </div>
+  <div class="w3-hide w3-animate-zoom w3-khaki w3-margin-bottom" id="Demo25">
+    <form name=Trading method="POST" data-netlify="true">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="iPhone model" required name="Name"></p>
+      <select class="w3-select">
+        <option value="">Select Category</option>
+        <option value="LCD">Screen/LCD Replacement</option>
+        <option value="Battery">Battery Replacement</option>
+      </select>
+      <p class="w3-left w3-padding-16 w3-small"> Would you like to visit our office..&nbsp;
+        <input type="radio" name="visiting" value="yes">Yes
+      <input type="radio" name="visiting" value="no">No
+      </p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="valid phone no." required name="PhoneNumber"></p>
+      <p class="w3-margin-top">
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND
+        </button>
+      </p>
+  </form>
+  </div>
 
 
   <!--<script type="text/javascript">

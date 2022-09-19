@@ -410,4 +410,6 @@ section.couponsection h2 {
 	100%{opacity: 1;transform scale(1);color: orange;}
 }
 
-
+input{
+	background-color: inherit !important;
+}
