@@ -413,3 +413,14 @@ section.couponsection h2 {
 input{
 	background-color: inherit !important;
 }
+
+
+.social a{
+	display: inline-block;
+	margin-top: 15px;
+
+}
+
+
+
+
