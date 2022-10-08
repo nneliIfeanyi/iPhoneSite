@@ -234,6 +234,12 @@ section.couponsection h2 {
 	grid-gap: 1.5px;
 }
 
+.dflexSocial{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5px;
+}
+
 .showcase-swap{
 	height: 70vh;
 	position: relative;
